@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+} 
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.advice-container {
+    background-color: hsl(217, 19%, 24%);
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 0.5rem;
+}
+
+p {
+    text-align: center;
+}
+
+.pattern-divider-mobile.pattern-divider-desktop {
+    margin-bottom: 2rem;
+}
+
+.pattern-divider-desktop {
+    display: none;
+}
+
+.dice {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3rem;
+}
+
+.dice:hover {
+    cursor: pointer;
+    box-shadow: hsl(150, 100%, 66%) 0px 15px 70px 4px;
+}
+
+.dice img {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (min-width: 500px) {
+
+    .advice-container {
+        max-width: 500px;
+    }
+}
